@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify-webapp</title>
     <script src="https://kit.fontawesome.com/e303442fcb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="body-container">
@@ -13,19 +16,52 @@
         <div class="media-control-bar">
             <div class="media-left">
                 <figure>
-                    <img width="55px" src="./img/sinister.jpeg" alt="">
+                    <img width="55px" height="55px" src="./img/sinister.jpeg" alt="">
                 </figure>
                 <div>
                     <h4>Sinister</h4>
                     <p>Brano nome</p>
                 </div>
                 <div>
-                    <i class="fa-regular fa-heart" style="color: #848484;"></i>
-                    <i class="fa-regular fa-folder" style="color: #848484;"></i>
+                    <button>
+                        <i class="fa-regular fa-heart" style="color: #848484;"></i>
+                    </button>
+                    <button>
+                        <i class="fa-regular fa-folder" style="color: #848484;"></i>
+                    </button>
                 </div>
             </div>
-            <div class="media-center"></div>
-            <div class="media-right"></div>
+            <div class="media-center">
+                <div class="media-control">
+                <button>
+                    <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                </button>
+                <button>
+                    <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i>
+                </button>
+                </div>
+                <div class="media-bar">
+                    <div><h3>0:25</h3></div>
+                    <div class="bar-full"><div class="bar-progress"></div></div>
+                    <div><h3>4:35</h3></div>
+                </div>
+
+            </div>
+            <div class="media-right">
+                <button><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+                <button><i class="fa-solid fa-desktop" style="color: #ffffff;"></i></button>
+                <button><i class="fa-solid fa-volume-high" style="color: #ffffff;"></i></button>
+                <div><div></div></div>
+            </div>
         </div>
 
     </div>
