@@ -60,6 +60,7 @@ body {
     display: flex;
     align-items:center;
     gap:10px;
+    padding-left: 5px;
 }
 .media-center {
     display: flex;
@@ -106,4 +107,7 @@ body {
 .media-control-bar .media-left div p {
     font-size:13px;
     color:rgb(130, 130, 130);
+}
+.media-right {
+    padding-right: 5px;
 }
