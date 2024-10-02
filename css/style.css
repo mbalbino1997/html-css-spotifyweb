@@ -190,3 +190,18 @@ body {
 .bar-full:hover {
     cursor: grab;
 }
+
+/*sidebar*/
+.main-content {
+    display: flex;
+
+}
+.main-content .sidebar {
+    width: 230px;
+    flex-shrink: 0;
+    background-color: black;
+}
+.main-content .content {
+    flex-grow:1;
+    background-color: rgb(20,25,33);
+}
