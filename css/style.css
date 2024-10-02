@@ -15,19 +15,22 @@ button {
     border: none;       
     background: none;   
     box-shadow: none;   
-    padding: 10px 10px; 
+    padding: 5px 5px; 
     cursor: pointer;
     
     transition: font-size 0.3s ease;
 }
 button i {
+    color: #848484;
     transition: font-size 0.3s ease;
 }
 button:hover {
     font-size:103%;
+    
 }
 button:hover i {
     font-size: 105%;
+    color: white;
 }
 
 ul,
@@ -60,12 +63,12 @@ body {
     display: flex;
     align-items:center;
     gap:10px;
-    padding-left: 5px;
+    padding:0px 10px;
 }
 .media-center {
     display: flex;
     flex-direction: column;
-    
+    width: 45%;
     padding: 5px 0px;
 
 
@@ -86,11 +89,38 @@ body {
     font-size:13px;
 }
 .bar-full {
-    margin:5px 20px;
+    margin:10px 20px;
     width: 300px;
-    height: 5px;
+    height: 4px;
     border-radius: 999px;
     background-color: rgba(90, 90, 90, 1);
+    flex-grow: 1;
+    display: flex;
+    align-items:center;
+    
+}
+.bar-full .bar-progress {
+    
+    height: 100%;
+    width: 11%;
+    background-color: rgb(193,193,193);
+    
+}
+.bar-full .progress {
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    background-color: white;
+    display: none;
+    
+
+}
+.bar-full:hover .bar-progress {
+    background-color: rgb(173, 255, 47);
+}
+.bar-full:hover .progress {
+    display:block;
+    
 }
 .media-control  > button {
     font-size: 15px;
@@ -98,8 +128,18 @@ body {
 .media-control > button:nth-child(3) {
     font-size:30px;
 }
+.media-left figure {
+    height: 42px;
+    width: 42px;
+    flex-shrink: 0;
+}
 .media-left figure img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
 }
 .media-control-bar .media-left div h4 {
     font-size: 13px;
@@ -108,6 +148,45 @@ body {
     font-size:13px;
     color:rgb(130, 130, 130);
 }
+.media-control-bar .media-left div p:hover {
+    color:white;
+    text-decoration: underline;
+    cursor:pointer;
+}
 .media-right {
-    padding-right: 5px;
+    padding:0px 10px;
+    display: flex;
+    align-items: center;
+}
+.media-right .volume-full {
+    width: 120px;
+    height: 4px;
+    border-radius: 999px;
+    background-color: rgba(90, 90, 90, 1);
+    flex-grow: 1;
+    display: flex;
+    align-items:center;
+}
+.volume-full .volume-progress {
+    height: 100%;
+    width: 25%;
+    background-color: rgb(193,193,193);
+}
+.volume-full .progress {
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    background-color: white;
+    display: none;
+}
+.volume-full:hover .volume-progress {
+    background-color: rgb(173, 255, 47);
+}
+.volume-full:hover .progress {
+    display:block;
+    
+}
+.volume-full:hover,
+.bar-full:hover {
+    cursor: grab;
 }
