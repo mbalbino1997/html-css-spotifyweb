@@ -284,3 +284,16 @@ body {
     gap:10px;
     margin:10px 0;
 }
+/*upgrade*/
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content .upgrade {
+    height: 80px;
+    background-color: rgb(8,11,18);
+    flex-shrink: 0;
+}
+.content .main-content {
+    flex-grow: 1;
+}
