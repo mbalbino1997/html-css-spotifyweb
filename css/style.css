@@ -14,8 +14,7 @@ button {
     background-color: transparent;
     border: none;       
     background: none;   
-    box-shadow: none;   
-    padding: 5px 5px; 
+    box-shadow: none; 
     cursor: pointer;
     
     transition: font-size 0.3s ease;
@@ -126,7 +125,7 @@ body {
     font-size: 15px;
 }
 .media-control > button:nth-child(3) {
-    font-size:30px;
+    font-size:28px;
 }
 .media-left figure {
     height: 42px;
@@ -157,6 +156,7 @@ body {
     padding:0px 10px;
     display: flex;
     align-items: center;
+    gap: 9px;
 }
 .media-right .volume-full {
     width: 120px;
