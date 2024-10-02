@@ -4,9 +4,9 @@
     margin:0px;
     padding:0px;
 }
-img {
+/* img {
     width: 100%;
-}
+} */
 a {
     text-decoration: none;
 }
@@ -204,4 +204,15 @@ body {
 .main-content .content {
     flex-grow:1;
     background-color: rgb(20,25,33);
+}
+.sidebar figure img {
+    width:130px;
+    height:42px;
+}
+.sidebar div a {
+    display: flex;
+    align-items:center;
+    gap:10px;
+    justify-content: left;
+
 }
