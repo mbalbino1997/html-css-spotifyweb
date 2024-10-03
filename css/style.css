@@ -230,7 +230,12 @@ body {
 .sidebar div a > p {
     font-size:10px;
 }
-.sidebar > * {
+.sidebar figure,
+.sidebar .green-vbar-div > a,
+.sidebar .new-pl > *,
+.sidebar .list-pl li > a,
+.sidebar .last-sidebar > *
+ {
     padding-left: 20px;
 }
 .playlt {
@@ -287,18 +292,28 @@ body {
 /*upgrade*/
 .content {
     display: flex;
-    flex-direction: column;
+    
 }
-.content .upgrade {
+.main-inner-content .upgrade {
     height: 80px;
+    width: 100%;
     background-color: rgb(8,11,18);
     flex-shrink: 0;
 }
-.content .main-content {
+.content .main-inner-content {
     flex-grow: 1;
+    width: 100%;
+}
+.main-inner-content {
+    position:relative;
+    overflow-y: scroll;
+    
+    
 }
 .upgrade {
-    position:relative;
+    position:absolute;
+    top:0;
+    right: 0;
 }
 .upgrade a {
     color:white;
