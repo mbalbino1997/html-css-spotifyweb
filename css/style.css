@@ -1,4 +1,9 @@
+/*root*/
+:root {
+    --pd-left:20px;
+}
 /*reset*/
+
 * {
     box-sizing: border-box;
     margin:0px;
@@ -246,7 +251,7 @@ body {
 .sidebar .list-pl li > a,
 .sidebar .last-sidebar > *
  {
-    padding-left: 20px;
+    padding-left:var(--pd-left);
 }
 .playlt {
     display: flex;
