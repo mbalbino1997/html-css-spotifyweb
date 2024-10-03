@@ -297,3 +297,19 @@ body {
 .content .main-content {
     flex-grow: 1;
 }
+.upgrade {
+    position:relative;
+}
+.upgrade a {
+    color:white;
+    padding: 10px 30px;
+    border-radius: 999px;
+    border: 1px solid white;
+    position:absolute;
+    right:10px;
+    top:15px;
+    font-size: 13px;
+}
+.upgrade a:hover {
+    transform: scale(1.1);
+}
