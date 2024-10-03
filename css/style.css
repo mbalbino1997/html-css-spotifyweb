@@ -168,9 +168,11 @@ body {
     height: 4px;
     border-radius: 999px;
     background-color: rgba(90, 90, 90, 1);
-    flex-grow: 1;
+    flex-shrink: 1;
     display: flex;
     align-items:center;
+    min-width: 0px;
+    
 }
 .volume-full .volume-progress {
     height: 100%;
@@ -345,6 +347,7 @@ body {
 .main-inner-content {
     position:relative;
     overflow-y: scroll;
+    padding-top: 80px;
     
     
 }
@@ -366,3 +369,4 @@ body {
 .upgrade a:hover {
     transform: scale(1.1);
 }
+/*inner content*/
