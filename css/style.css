@@ -190,8 +190,18 @@ body {
 .bar-full:hover {
     cursor: grab;
 }
+.media-left div:last-of-type > button {
+    padding:0 4px;
+}
 
 /*sidebar*/
+.sidebar .last-sidebar a:first-of-type > img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+.green-vbar-div .green-vbar {
+    color:white;
+}
 .main-content {
     display: flex;
 
@@ -288,6 +298,29 @@ body {
     align-items: center;
     gap:10px;
     margin:10px 0;
+}
+.profile-sidebar .profile-background {
+    width:37px;
+    aspect-ratio: 1/1;
+    border-radius:50%;
+    background-color: rgb(128,128,128);
+    overflow:hidden;
+}
+.sidebar .new-pl > h1 {
+    color: white; 
+    font-size: 13px;
+}
+.sidebar .last-sidebar > a:first-child {
+    font-size: 9px;
+}
+.sidebar .last-sidebar div:first-of-type > hr {
+    color: grey;
+    width:180px;
+    
+}
+.sidebar .last-sidebar .profile-sidebar > h4 {
+    color:white;
+    font-size: 10px;
 }
 /*upgrade*/
 .content {
