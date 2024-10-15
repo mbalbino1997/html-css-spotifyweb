@@ -241,11 +241,11 @@ body {
     bottom:0;
     z-index: 1;
 }
-.sidebar figure {
+.sidebar .big-logo {
     padding-top:20px;
     
 }
-.sidebar figure img {
+.sidebar .big-logo img {
     display: block;
     width:130px;
     height:42px;
@@ -261,7 +261,7 @@ body {
 .sidebar div a > p {
     font-size:10px;
 }
-.sidebar figure,
+.sidebar .big-logo,
 .sidebar .green-vbar-div > a,
 .sidebar .new-pl > *,
 .sidebar .list-pl li > a,
@@ -464,3 +464,55 @@ body {
     font-size:8px;
     font-weight: bold;
 }
+
+@media (max-width: 992px) { 
+    .col-2 {
+        width: 50%;
+    }
+ }
+ @media (max-width: 576px) {
+    .col-2 {
+        width:100%;
+    }
+    .none {
+        display: none;
+    }
+    .media-control-bar {
+        justify-content: center;
+    }
+    .media-center {
+        flex-grow:1;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .main-inner-content {
+        padding-top:0;
+        padding-left: 50px;
+    }
+    .sidebar {
+        max-width: 50px;
+        align-items: center;
+    }
+    :root {
+        --pd-left:0px;
+    }
+    .green-vbar:before {
+        display: none;
+    }
+    .main-inner-content .inner-menu {
+        gap:10px;
+    }
+    .last-sidebar .center {
+        justify-content: center;
+    }
+    .profile-sidebar .profile-background {
+        width: 30px;
+    }
+    .sidebar .last-sidebar a:first-of-type {
+        margin-right: 5px;
+    }
+    .sidebar .last-sidebar a:first-of-type img {
+        width: 25px;
+    }
+    
+ }
