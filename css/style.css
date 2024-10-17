@@ -245,6 +245,11 @@ body {
     padding-top:20px;
     
 }
+.sidebar .small-logo {
+    width: 35px;
+    aspect-ratio: 1/1;
+    display: none;
+}
 .sidebar .big-logo img {
     display: block;
     width:130px;
@@ -301,6 +306,15 @@ body {
     color:rgb(113, 113, 113);
     font-size:9px;
     
+}
+.list-pl li:hover > a {
+    color: white;
+}
+.white-bg:hover {
+    background-color: white;
+}
+.white-hov:hover {
+    color: white;
 }
 .list-pl > li {
     margin-bottom:3px;
@@ -421,6 +435,7 @@ body {
 .img-album {
     width: 100%;
     aspect-ratio: 1/1;
+    transition: opacity 0.4s ease;
 
 }
 .round-img {
@@ -452,6 +467,40 @@ body {
     height: 100%;
     padding:5px 5px;
     text-align: center;
+    position:relative;
+}
+.col-2 .card::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f144";
+    color: white;
+    font-size: 60px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.col-2 .card:hover {
+    cursor:pointer;
+}
+.col-2 .card:hover::before {
+    opacity: 1;
+    transform: scale(1.1);
+    
+}
+.col-2 .card:hover .img-album {
+    opacity: 0.5;
+    
+
 }
 .under-album {
     color:white;
@@ -513,6 +562,10 @@ body {
     }
     .sidebar .last-sidebar a:first-of-type img {
         width: 25px;
+    }
+    .sidebar .small-logo {
+        margin-top: 10px;
+        display: block;
     }
     
  }
